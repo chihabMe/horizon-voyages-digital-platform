@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useTransition } from "react";
+import React, { useState, useEffect, useTransition, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { CheckCircle, Award, Compass, Send, Check, Plane, HelpCircle } from "lucide-react";
 import { createVisaRequest } from "@/app/actions/visa";
 
-export default function Visa() {
+function VisaContent() {
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
   const [submitted, setSubmitted] = useState(false);
@@ -313,5 +313,13 @@ export default function Visa() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function Visa() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-white">Chargement...</div>}>
+      <VisaContent />
+    </Suspense>
   );
 }
