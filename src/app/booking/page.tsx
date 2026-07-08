@@ -4,6 +4,7 @@ import React, { useState, useEffect, useTransition } from "react";
 import { useSession } from "next-auth/react";
 import { Search, User as UserIcon, Calendar, Info, Clock, CheckCircle, XCircle, AlertCircle, ShieldAlert, Sparkles, MapPin, DollarSign, Users, ChevronRight, Phone } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface BookingData {
   id: string;

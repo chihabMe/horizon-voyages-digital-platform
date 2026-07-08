@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
-import { Menu, X, Language, LogOut, User as UserIcon, Calendar, CheckSquare, Shield } from "lucide-react";
+import { Menu, X, Languages, LogOut, User as UserIcon, Calendar, CheckSquare, Shield } from "lucide-react";
 import Logo from "./Logo";
 
 export default function Navbar() {

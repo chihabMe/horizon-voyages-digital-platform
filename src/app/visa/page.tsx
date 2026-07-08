@@ -92,7 +92,7 @@ export default function Visa() {
             SERVICE CONCIERGERIE
           </span>
           <h1 className="font-display text-4xl md:text-6xl font-bold text-white leading-tight">
-            Votre Passeport pour le <span class="text-secondary">Monde</span>
+            Votre Passeport pour le <span className="text-secondary">Monde</span>
           </h1>
           <p className="text-on-surface-variant font-light text-lg leading-relaxed max-w-xl">
             Schengen, Royaume-Uni, Turquie ou Dubaï : nous gérons la complexité des formulaires, des rendez-vous et des pièces justificatives.
