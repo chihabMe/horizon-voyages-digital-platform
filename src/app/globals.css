@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #121315;
+  --color-on-background: #e3e2e5;
+  --color-secondary: #ebc246;
+  --color-primary: #b0c8eb;
+  --color-primary-container: #0a2540;
+  --color-surface: #121315;
+  --color-surface-container: #1f2022;
+  --color-surface-container-low: #1b1c1e;
+  --color-surface-container-high: #292a2c;
+  --color-surface-container-highest: #343537;
+  --color-surface-container-lowest: #0d0e10;
+  --color-on-surface-variant: #c4c6ce;
+  --color-on-surface: #e3e2e5;
+  --color-outline: #8e9198;
+  --color-outline-variant: #43474d;
+  
+  --font-display: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility btn-primary {
+  background-color: #ebc246;
+  color: #0A2540;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+@utility btn-primary-hover {
+  box-shadow: 0 0 15px rgba(235, 194, 70, 0.5);
+  transform: scale(1.02);
+}
+
+@utility card-hover {
+  transition: all 0.3s ease;
+}
+
+@utility card-hover-active {
+  transform: scale(1.02);
+  border-color: rgba(235, 194, 70, 0.4);
+}
