@@ -54,7 +54,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center z-0 transition-all duration-700" 
           style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=1600&auto=format&fit=crop')",
+            backgroundImage: "url('/images/hero-bg.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black/75 backdrop-blur-[1px]"></div>
